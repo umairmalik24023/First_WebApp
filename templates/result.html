@@ -1,0 +1,21 @@
+<!Doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>First web app</title>
+</head>
+<body>
+    <h1>This pessage has {{word_count}} Words</h1>
+    {{key1}}
+    <a href="{% url 'home' %}">Click here For Home</a>
+    {{article}}
+    <br></br>
+    <br></br>
+    <br></br>
+    <h1>Total Count</h1>
+    <h1>Words</h1>
+    {% for word,num in dict_words %}
+    <h1>{{word}}::{{num}}</h1>
+    {% endfor %}
+</body>
+</html>
